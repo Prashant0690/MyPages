@@ -81,8 +81,32 @@
             </div>
             <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-3">
-                        <img alt="..." class="img-responsive img-thumbnail" src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/1150282_10201512008222710_243365756_n.jpg?oh=4774712eed47ca7c2114ab760a0e2397&oe=574D740F">
+                    <div class="col-md-3 profile">
+                        <div class="img-box">
+							<!--<img src="http://placemi.com/petnp/600x700" class="img-responsive">-->
+							<img src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/1150282_10201512008222710_243365756_n.jpg?oh=4774712eed47ca7c2114ab760a0e2397&oe=574D740F" class="img-responsive">
+							<ul class="text-center">							  
+								<li><a href="https://github.com/Prashant0690/" class="icoGithub" title="Github"><i class="fa fa-github"></i></a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/prashant.tiwari.33821" class="icoFacebook" title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://plus.google.com/u/0/110748961223470685912/posts" class="icoGoogle" title="Google +">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://in.linkedin.com/in/prashant-tiwari-432a9592" class="icoLinkedin" title="Linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+							</ul>
+						  </div>
+						  <h1>Prashant Tiwari</h1>
+						  <a href="https://goo.gl/photos/da6mdPgnJuzwR4NS6"><h1>My Gallery</h1></a>
                     </div>
                     <div class="col-md-9">
                         <h3>
@@ -670,6 +694,106 @@
             .timeline-body > p + p {
                 margin-top: 5px;
             }
+            		/* IMAGE*/
+		@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .team{
+            padding:75px 0;
+        }
+        h6.description{
+        	font-weight: bold;
+        	letter-spacing: 2px;
+        	color: #999;
+        	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+        	padding-bottom: 5px;
+        }
+        .profile{
+        	margin-top: 25px;
+        }
+        .profile h1{
+        	font-weight: normal;
+        	font-size: 20px;
+        	margin:10px 0 0 0;
+        }
+        .profile h2{
+        	font-size: 14px;
+        	font-weight: lighter;
+        	margin-top: 5px;
+        }
+        .profile .img-box{
+        	opacity: 1;
+        	display: block;
+        	position: relative;
+        }
+        .profile .img-box:after{
+        	content:"";
+        	opacity: 0;
+        	background-color: rgba(0, 0, 0, 0.75);
+        	position: absolute;
+        	right: 0;
+        	left: 0;
+        	top: 0;
+        	bottom: 0;
+        }
+        .img-box ul{
+        	position: absolute;
+        	z-index: 2;
+        	bottom: 50px;
+        	text-align: center;
+        	width: 100%;
+        	padding-left: 0px;
+        	height: 0px;
+        	margin:0px;
+        	opacity: 0;
+        }
+        .profile .img-box:after, .img-box ul, .img-box ul li{
+        	-webkit-transition: all 0.5s ease-in-out 0s;
+            -moz-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;
+        }
+        .img-box ul i{
+        	font-size: 20px;
+        	letter-spacing: 10px;
+        }
+        .img-box ul li{
+        	width: 30px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #88C425;
+            margin: 2px;
+            padding: 5px;
+        	display: inline-block;
+        }
+        .img-box a{
+        	color:#fff;
+        }
+        .img-box:hover:after{
+        	opacity: 1;
+        }
+        .img-box:hover ul{
+        	opacity: 1;
+        }
+        .img-box ul a{
+        	-webkit-transition: all 0.3s ease-in-out 0s;
+        	-moz-transition: all 0.3s ease-in-out 0s;
+        	transition: all 0.3s ease-in-out 0s;
+        }
+        .img-box a:hover li{
+        	border-color: #fff;
+        	color: #88C425;
+        }
+        a{
+            color:#88C425;
+        }
+        a:hover{
+            text-decoration:none;
+            color:#519548;
+        }
+        i.red{
+            color:#BC0213;
+        }
         </style>
         <!-- Script================================================== -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
